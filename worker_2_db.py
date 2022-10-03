@@ -11,7 +11,6 @@ from datetime import datetime
 from configparser import ConfigParser
 from mysql.connector import Error
 
-
 def init_db():
 	global connection
 	connection = mysql.connector.connect(host=mysql_config_mysql_host, database=mysql_config_mysql_db, user=mysql_config_mysql_user, password=mysql_config_mysql_pass)
